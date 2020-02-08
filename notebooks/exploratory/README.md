@@ -1,3 +1,3 @@
 # Exploratory
 
-This directory contains an unpolished exploratory data analysis (EDA) notebook.
+This directory contains unpolished exploratory data analysis (EDA) notebooks.

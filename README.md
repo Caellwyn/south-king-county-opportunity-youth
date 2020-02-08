@@ -2,17 +2,18 @@
 
 This project offers an updated estimate of the number of Opportunity Youth in South King County using the 2017 5-year American Community Survey [(ACS)](https://www.census.gov/programs-surveys/acs/about.html) Public Use Microdata Survey [(PUMS)](https://www.census.gov/programs-surveys/acs/technical-documentation/pums.html).
 
-## Setup Instructions
+## THIS REPOSITORY
 
-To download the necessary data, please run the following command:
+### Setup Instructions
 
+If you are missing required software (e.g. Anaconda, PostgreSQL), please run the following command in Bash:
 ```bash
-# installs necessary requirements and downloads necessary data
+# installs necessary requirements
 # note: this may take anywhere from 10-20 minutes
-sh setup.sh
+sh src/requirements/install.sh
 ```
 
-### `oy-env` conda environment
+### `oy-env` conda Environment
 
 This project relies on you using the [`environment.yml`](environment.yml) file to recreate the `oy-env` conda environment. To do so, please run the following commands:
 
@@ -23,14 +24,25 @@ conda env create -f environment.yml
 # activate the oy-env conda environment
 conda activate oy-env
 
-# make oy-env available to you as a kernel in jupyter
+# if needed, make oy-env available to you as a kernel in jupyter
 python -m ipykernel install --user --name oy-env --display-name "Python 3 (oy-env)"
 ```
+
+### Data Download
+
+To download the relevant data, run the following command in Python:
+
+```python
+data_collection.download_data_and_load_into_sql()
+```
+
+Note that this may take up to 10-20 minutes depending on internet speed.
+
+There is an example notebook in the `notebooks/exploratory` directory with this code already added.
 
 ## BACKGROUND
 
 Measuring the successes and barriers faced by our most vulnerable youth is a challenge in the South King County region<sup>1</sup>. While there is a lot of information gathered from K12 districts and colleges about student outcomes, few data exists among Opportunity Youth (OY): young folks between the age 16 through 24 who are disengaged from both work and school<sup>2</sup>. This population is of particular interest to The Seattle Region Partnership (SRP), a multi-sector initiative founded by the Seattle Metropolitan Chamber of Commerce, Seattle Foundation, City of Seattle, and King County<sup>3</sup>.
-
 
 ## PROJECT GOAL
 
@@ -76,61 +88,40 @@ The goal of this project is to showcase your newfound Python and PostgreSQL skil
 To complete this project, you will need to turn in the following deliverables:
 
 1. A public GitHub repository.
-
 2. An `environment.yml` file that contains all the necessary packages needed to recreate your conda environment.
-
+    - Start with the provided `environment.yml`, then as you install any additional packages be sure to [export](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#exporting-the-environment-yml-file) the new version and commit the changes in git.
 3. A standalone `src/` directory that stores all relevant source code.
-
-    + All functions have docstrings that act as [professional-quality documentation](http://google.github.io/styleguide/pyguide.html#381-docstrings).
-
-    + [Well documented](https://www.sqlstyle.guide/) SQL queries with appropriate single-line or multiline comments.
-
-4. A standalone `data/` directory that stores all relevant raw and processed data files
-
-    + Be sure to include how the data was obtained!
-    + All large files are labeled in the `.gitignore` file to avoid having them accidently live in your commit history.
-
-5. A user-focused README.md file that explains your process, methodology and findings.
-
-    + Take the time to make sure that you craft your story well, and clearly explain your process and findings in a way that clearly shows both your technical expertise and your ability to communicate your results!
-
-6. One Jupyter Notebook file that focuses on EDA, visualization, and presentation.
-
-    + The very beginning of the notebook contains a description of the purpose of the notebook.
-
-    + This is helpful for your future self and anyone of your colleagues that needs to view your notebook. Without this context, you’re implicitly asking your peers to invest a lot of energy to help solve your problem. Help them by enabling them to jump into your project by providing them the purpose of this Jupyter Notebook.
-
-    + Explanation of the data sources and where one can retrieve them
-        + Whenever possible, link to the corresponding data dictionary
-
-    + Custom functions and classes are imported from Python modules and are not created directly in the notebook.
-
-7. A one-page memo written exclusively for a non-technical stakeholder.
-
-    + This memo should describe:
-        + A summary of the business problem you are trying to solve
-        + Key takeaways from your solution
-        + A section on next steps if you had more time (i.e. one additional week)
-
+    - All functions have docstrings that act as [professional-quality documentation](http://google.github.io/styleguide/pyguide.html#381-docstrings).
+    - [Well documented](https://www.sqlstyle.guide/) SQL queries with appropriate single-line or multiline comments.
+4. A user-focused `README.md` file that explains your process, methodology and findings.
+    - Take the time to make sure that you craft your story well, and clearly explain your process and findings in a way that clearly shows both your technical expertise and your ability to communicate your results!
+5. A record of your workflow stored in `notebooks/exploratory`.  Don't be afraid to leave in error messages, so you know what didn't work!
+6. One final Jupyter Notebook file stored in `notebooks/report` that focuses on visualization and presentation.
+    - The very beginning of the notebook contains a description of the purpose of the notebook.
+       - This is helpful for your future self and anyone of your colleagues that needs to view your notebook. Without this context, you’re implicitly asking your peers to invest a lot of energy to help solve your problem. Help them by enabling them to jump into your project by providing them the purpose of this Jupyter Notebook.
+    - Explanation of the data sources and where one can retrieve them
+        - Whenever possible, link to the corresponding data dictionary
+    - Custom functions and classes are imported from Python modules and are not created directly in the notebook.  As soon as you have a working function in one of your exploratory notebooks, copy it over to `src` so it is reusable.
+7. A one-page memo stored in `reports/memo.md` written exclusively for a non-technical stakeholder.
+    - This memo should describe:
+       - A summary of the business problem you are trying to solve
+       - Key takeaways from your solution
+       - A section on next steps if you had more time (i.e. one additional week)
 8. An "Executive Summary" Keynote/PowerPoint/Google Slide presentation (delivered as a PDF export) that explains what you have found for the SRP.
-
-    + Make sure to also add and commit this file as presentation.pdf of your non-technical presentation to your repository with a file name of `presentation.pdf`.
-
-    + Contain between 5-10 professional quality slides detailing:
-        + A high-level overview of your methodology
-
-        + The results you’ve uncovered
-
-        + Any real-world recommendations you would like to make based on your findings (ask yourself--why should the executive team care about what you found? How can your findings help the company/stakeholder?)
-
-        + Avoid technical jargon and explain results in a clear, actionable way for non-technical audiences.
+    - Make sure to also add and commit this file as presentation.pdf of your non-technical presentation to your repository with a file name of `reports/presentation.pdf`.
+    - Contain between 5-10 professional quality slides detailing:
+       - A high-level overview of your methodology
+       - The results you’ve uncovered
+       - Any real-world recommendations you would like to make based on your findings (ask yourself--why should the executive team care about what you found? How can your findings help the company/stakeholder?)
+       - Avoid technical jargon and explain results in a clear, actionable way for non-technical audiences.
+    - All visualizations included in this presentation should also be exported as image files (e.g. with `plt.savefig`, not by taking a screenshot) and saved under `reports/figures/`
 
 ## Citations
 
-* <sup>1</sup> Yohalem, N., Cooley, S. 2016. “Opportunity Youth in the Road Map Project Region”. Community Center for Education Results. Available at: https://bit.ly/2P2XRF3.
+<sup>1</sup> Yohalem, N., Cooley, S. 2016. “Opportunity Youth in the Road Map Project Region”. Community Center for Education Results. Available at: https://bit.ly/2P2XRF3.
 
-* <sup>2</sup> Anderson, T., Braga, B., Derrick-Mills, T., Dodkowitz, A., Peters, E., Runes, C., and Winkler, M. 2019. “New Insights into the Back on Track Model’s Effects on Opportunity Youth Outcomes”. Urban Institute. Available at: https://bit.ly/2BuCLr1.
+<sup>2</sup> Anderson, T., Braga, B., Derrick-Mills, T., Dodkowitz, A., Peters, E., Runes, C., and Winkler, M. 2019. “New Insights into the Back on Track Model’s Effects on Opportunity Youth Outcomes”. Urban Institute. Available at: https://bit.ly/2BuCLr1.
 
-* <sup>3</sup> Seattle Region Partnership. 2016. “King County Opportunity Youth Overview: Demographics of opportunity youth and systemic barriers to employment”. https://bit.ly/2oRGz37.
+<sup>3</sup> Seattle Region Partnership. 2016. “King County Opportunity Youth Overview: Demographics of opportunity youth and systemic barriers to employment”. https://bit.ly/2oRGz37.
 
-* <sup>4</sup> Morton, N. 2019. “Nearly 19,000 youth in King County are neither working nor in school. How one Seattle nonprofit is changing that.” The Seattle Times. Available at: https://bit.ly/2W5EufR.
+<sup>4</sup> Morton, N. 2019. “Nearly 19,000 youth in King County are neither working nor in school. How one Seattle nonprofit is changing that.” The Seattle Times. Available at: https://bit.ly/2W5EufR.
