@@ -10,33 +10,15 @@ get_str_abs_filename() {
   echo "'$(cd "$(dirname "$1")" && pwd)/$(basename "$1")'"
 }
 
-# download the ACS PUMS file naming convention documentation
-wget -P references/ https://www2.census.gov/programs-surveys/acs/data/pums/2017/5-Year/PUMS_file_naming_convention.pdf
-
 # download the 2010 PUMA names data
 wget -P data/raw/ https://usa.ipums.org/usa/resources/volii/CPUMA0010_PUMA2010_components.xls
 
 # download the 2010 PUMA shapefile
 wget -P data/raw/ https://www2.census.gov/geo/tiger/TIGER2017//PUMA/tl_2017_53_puma10.zip
 
-# download the 2010 PUMA name guidelines
-wget -P references/ https://www2.census.gov/geo/docs/reference/puma/PUMA_name_guidelines.txt
-
-# download the 2010 PUMA guidelines (historical context)
-wget -P references/ https://www2.census.gov/geo/docs/reference/puma/2010_puma_guidelines.txt
-
-# download 2010 PUMA overview (high level takeaways)
-wget -P references/ https://www2.census.gov/geo/docs/reference/puma/puma_tutorial.txt
-
-# download the 2017 ACS PUMS data dictionary
-wget -O PUMS_Data_Dictionary_2017.pdf https://www2.census.gov/programs-surveys/acs/tech_docs/pums/data_dict/PUMS_Data_Dictionary_2017.pdf?
-
 # download the 2017 5-year ACS PUMS
 # person level records for the state of WA
 wget -P data/raw https://www2.census.gov/programs-surveys/acs/data/pums/2017/5-Year/csv_pwa.zip
-
-# download the The LEHD Origin-Destination Employment Statistics data dictionary
-wget -P references/ https://lehd.ces.census.gov/data/lodes/LODES7/LODESTechDoc7.4.pdf
 
 # download the 2017 WA jobs data
 wget -P data/raw https://lehd.ces.census.gov/data/lodes/LODES7/wa/wac/wa_wac_S000_JT00_2017.csv.gz
@@ -45,8 +27,6 @@ wget -P data/raw https://lehd.ces.census.gov/data/lodes/LODES7/wa/wac/wa_wac_S00
 wget -P data/raw https://lehd.ces.census.gov/data/lodes/LODES7/wa/wa_xwalk.csv.gz
 
 # download the census tract to puma geographic crosswalk data
-# note: see here for a data dictionary 
-#       (https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/2010-tract-to-puma-record-layout.html)
 wget -P data/raw https://www2.census.gov/geo/docs/maps-data/data/rel/2010_Census_Tract_to_2010_PUMA.txt
 
 # unpack the .zip files and place contents back into data/raw/ directory
@@ -75,7 +55,6 @@ export CT_PUMA_XWALK_PATH=$(get_str_abs_filename "data/raw/2010_Census_Tract_to_
 
 # move the documentation into the appropriate directory
 mv data/raw/ACS2013_2017_PUMS_README.pdf references/
-mv PUMS_Data_Dictionary_2017.pdf references/
 
 # create a PostgreSQL database
 createdb opportunity_youth
