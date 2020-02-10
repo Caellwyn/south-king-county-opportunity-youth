@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Some global gitignores ignore .sql files in case they represent databases
+# In this case, they are SQL scripts, not databases, so explicitly don't ignore
+!*.sql
