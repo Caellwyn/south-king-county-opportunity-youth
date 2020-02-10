@@ -2,7 +2,7 @@
 
 This directory will store:
 
-* an unpolished exploratory data analysis (EDA) notebook; and 
+* unpolished exploratory data analysis (EDA) notebooks; and
 * a polished notebook that states the business problem and summarizes your solution, along with high level takeaways.
 
 ## Naming Convention
@@ -11,6 +11,6 @@ Naming convention is:
 
 * a number (for ordering);
 * the creator's initials; and 
-a short `-` delimited description
+a short `_` delimited description
 
-Example is: `1.0-jqp-initial-data-exploration.ipynb`
+Example is: `01_erh_download_and_explore_data.ipynb`

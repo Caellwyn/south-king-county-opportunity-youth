@@ -70,6 +70,8 @@ The SRP has asked that any extra time remaining be used to create the following 
 
 * Of the census blocks where jobs for workers age 29 or younger are the majority of employed people, what are a few of the industries that employ this group of people?
 
+* Utilize additional data sources to support your recommendations, e.g. [Census Bureau APIs](https://www.census.gov/data/developers/data-sets.html), [King County Open Data](https://data.kingcounty.gov/browse?limitTo=datasets&provenance=official), or [King County GIS Open Data](https://gis-kingcounty.opendata.arcgis.com/)
+
 ## LEARNING GOALS
 The goal of this project is to showcase your newfound Python and PostgreSQL skills to generate analytical insights and communicate the high level takeaways to a non-technical audience. This project will emphasize the following learning goals:
 
@@ -122,6 +124,6 @@ To complete this project, you will need to turn in the following deliverables:
 
 <sup>2</sup> Anderson, T., Braga, B., Derrick-Mills, T., Dodkowitz, A., Peters, E., Runes, C., and Winkler, M. 2019. “New Insights into the Back on Track Model’s Effects on Opportunity Youth Outcomes”. Urban Institute. Available at: https://bit.ly/2BuCLr1.
 
-<sup>3</sup> Seattle Region Partnership. 2016. “King County Opportunity Youth Overview: Demographics of opportunity youth and systemic barriers to employment”. https://bit.ly/2oRGz37.
+<sup>3</sup> Seattle Region Partnership. 2016. “King County Opportunity Youth Overview: Demographics of opportunity youth and systemic barriers to employment”. Available at: https://bit.ly/2oRGz37.
 
 <sup>4</sup> Morton, N. 2019. “Nearly 19,000 youth in King County are neither working nor in school. How one Seattle nonprofit is changing that.” The Seattle Times. Available at: https://bit.ly/2W5EufR.
