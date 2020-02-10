@@ -15,7 +15,7 @@ sh src/requirements/install.sh
 
 ### `oy-env` conda Environment
 
-This project relies on you using the [`environment.yml`](environment.yml) file to recreate the `oy-env` conda environment. To do so, please run the following commands:
+This project relies on you using the [`environment.yml`](environment.yml) file to recreate the `oy-env` conda environment. To do so, please run the following commands *in your terminal*:
 
 ```bash
 # create the oy-env conda environment
@@ -28,15 +28,19 @@ conda activate oy-env
 python -m ipykernel install --user --name oy-env --display-name "Python 3 (oy-env)"
 ```
 
+Note that this may take 10 or more minutes depending on internet speed.
+
+**Catalina Note:** You may need to modify the `prefix` at the very bottom of `environment.yml` if you are on macOS Catalina.  Run `conda env list` in your terminal to determine the appropriate path by looking at the paths of your existing conda environment(s).  Modify `environment.yml` then try running the installation commands listed above again.
+
 ### Data Download
 
-To download the relevant data, run the following command in Python:
+To download the relevant data, run the following command *in Python*:
 
-```python
+```
 data_collection.download_data_and_load_into_sql()
 ```
 
-Note that this may take up to 10-20 minutes depending on internet speed.
+Note that this may take 10 or more minutes depending on internet speed.
 
 There is an example notebook in the `notebooks/exploratory` directory with this code already added.
 
