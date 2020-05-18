@@ -17,6 +17,8 @@ def create_database():
     without any username/password required to access it.  Then it creates a new
     database called `opportunity_youth`
     """
+    # Depending on your local settings, you may need to specify a user and password, e.g.
+    # conn = psycopg2.connect(dbname="postgres", user="postgres", password="password")
     conn = psycopg2.connect(dbname="postgres")
     conn.autocommit = True  # it seems this mode is needed to make a db
     conn.set_isolation_level(0)  # also this for dropping db
@@ -35,6 +37,8 @@ def create_tables():
     This creates empty tables with the appropriate schema, then the data
     transfer is performed in the `copy_csv_files` function
     """
+    # Depending on your local settings, you may need to specify a user and password, e.g.
+    # conn = psycopg2.connect(dbname=DBNAME, user="postgres", password="password")
     conn = psycopg2.connect(dbname=DBNAME)
 
     create_pums_2017_table(conn)
@@ -85,6 +89,8 @@ def copy_csv_files(data_files_dict):
     """
     Composite function that copies all CSV files into the database
     """
+    # Depending on your local settings, you may need to specify a user and password, e.g.
+    # conn = psycopg2.connect(dbname=DBNAME, user="postgres", password="password")
     conn = psycopg2.connect(dbname=DBNAME)
 
     for name, files in data_files_dict.items():
