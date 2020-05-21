@@ -131,3 +131,9 @@ dmypy.json
 # Some global gitignores ignore .sql files in case they represent databases
 # In this case, they are SQL scripts, not databases, so explicitly don't ignore
 !*.sql
+
+# Mac OS
+.DS_Store
+
+# VS Code
+.vscode/
