@@ -6,12 +6,14 @@ This project offers an updated estimate of the number of Opportunity Youth in So
 
 ### Setup Instructions
 
-If you are missing required software (e.g. Anaconda, PostgreSQL), please run the following command in Bash:
+If you are missing required software (e.g. Anaconda, PostgreSQL), please run the following command in Bash (designed for Mac computers):
 ```bash
 # installs necessary requirements
 # note: this may take anywhere from 10-20 minutes
 sh src/requirements/install.sh
 ```
+
+For Windows and Linux computers, you may need to manually ensure that you have installed [Anaconda](https://docs.anaconda.com/anaconda/install/) and [PostgreSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads).
 
 ### `oy-env` conda Environment
 
@@ -30,7 +32,18 @@ python -m ipykernel install --user --name oy-env --display-name "Python 3 (oy-en
 
 Note that this may take 10 or more minutes depending on internet speed.
 
+**Windows Note:** The same versions of these packages are not available for Windows computers, so all Windows users should use the `windows.yml` file instead of `environment.yml` (this file was generated on Windows 10)
+
+**Linux Note:** The same versions of these packages are not available for Linux computers, so all Linux users should use the `linux.yml` file instead of `environment.yml` (this file was generated on Red Hat)
+
 **Catalina Note:** You may need to modify the `prefix` at the very bottom of `environment.yml` if you are on macOS Catalina.  Run `conda env list` in your terminal to determine the appropriate path by looking at the paths of your existing conda environment(s).  Modify `environment.yml` then try running the installation commands listed above again.
+
+On all operating systems, you will know that you have the required software if the following Bash commands do not return error or "not found" messages:
+```bash
+which conda
+conda list geopandas
+which psql
+```
 
 ### Data Download
 
@@ -59,8 +72,6 @@ At minimum, the SRP is expecting the following:
 * A map that visualizes which parts of King County are a part of South King County;
 
 * An update of the estimated number of OY in South King County. In addition the estimate, be sure to include a breakdown of the count of OY by Public Use Microdata Area (PUMA) within South King County;
-    + _Note: your supervisor is very interested in these statistics. After the third day of project week, they will be conducting a code review to verify your results before you share these statistics with the SRP._
-
 
 * An update of the table “Opportunity Youth Status by Age” located on page 2 of the 2016 report “Opportunity Youth in the Road Map Project Region”; and
 
@@ -77,6 +88,7 @@ The SRP has asked that any extra time remaining be used to create the following 
 * Utilize additional data sources to support your recommendations, e.g. [Census Bureau APIs](https://www.census.gov/data/developers/data-sets.html), [King County Open Data](https://data.kingcounty.gov/browse?limitTo=datasets&provenance=official), or [King County GIS Open Data](https://gis-kingcounty.opendata.arcgis.com/)
 
 ## LEARNING GOALS
+
 The goal of this project is to showcase your newfound Python and PostgreSQL skills to generate analytical insights and communicate the high level takeaways to a non-technical audience. This project will emphasize the following learning goals:
 
 * Break down a question into small technical tasks;
@@ -96,6 +108,8 @@ To complete this project, you will need to turn in the following deliverables:
 1. A public GitHub repository with a well organized directory structure (this structure has been provided for you in this project, but will not be provided in future projects)
 2. An `environment.yml` file that contains all the necessary packages needed to recreate your conda environment.
     - Start with the provided `environment.yml`, then as you install any additional packages be sure to [export](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#exporting-the-environment-yml-file) the new version and commit the changes in git.
+    - For Windows users, generate a `windows.yml` based on the provided `windows.yml`
+    - For Linux users, generate a `linux.yml` based on the provided `linux.yml`
 3. A standalone `src/` directory that stores all relevant source code.
     - Although you may not be able to achieve this goal in Mod 1, we encourage you to package code into .py files and store them in src, then import the functions into the appropriate notebooks. Be ware of premature optimization, however.  Don't try to package your code before it works.
     - All functions have docstrings that act as [professional-quality documentation](http://google.github.io/styleguide/pyguide.html#381-docstrings).
