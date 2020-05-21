@@ -93,27 +93,26 @@ The goal of this project is to showcase your newfound Python and PostgreSQL skil
 
 To complete this project, you will need to turn in the following deliverables:
 
-1. A public GitHub repository.
+1. A public GitHub repository with a well organized directory structure (this structure has been provided for you in this project, but will not be provided in future projects)
 2. An `environment.yml` file that contains all the necessary packages needed to recreate your conda environment.
     - Start with the provided `environment.yml`, then as you install any additional packages be sure to [export](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#exporting-the-environment-yml-file) the new version and commit the changes in git.
 3. A standalone `src/` directory that stores all relevant source code.
+    - Although you may not be able to achieve this goal in Mod 1, we encourage you to package code into .py files and store them in src, then import the functions into the appropriate notebooks. Be ware of premature optimization, however.  Don't try to package your code before it works.
     - All functions have docstrings that act as [professional-quality documentation](http://google.github.io/styleguide/pyguide.html#381-docstrings).
     - [Well documented](https://www.sqlstyle.guide/) SQL queries with appropriate single-line or multiline comments.
 4. A user-focused `README.md` file that explains your process, methodology and findings.
+    - Provide a directory of your repository so a visitor will know where to look for your report notebook, your source code, etc. 
     - Take the time to make sure that you craft your story well, and clearly explain your process and findings in a way that clearly shows both your technical expertise and your ability to communicate your results!
+    - Begin with framing questions, describe your data source, include relevant, well labeled visualizations that support your conclusions, which come at the end.
 5. A record of your workflow stored in `notebooks/exploratory`.  Don't be afraid to leave in error messages, so you know what didn't work!
 6. One final Jupyter Notebook file stored in `notebooks/report` that focuses on visualization and presentation.
     - The very beginning of the notebook contains a description of the purpose of the notebook.
        - This is helpful for your future self and anyone of your colleagues that needs to view your notebook. Without this context, you’re implicitly asking your peers to invest a lot of energy to help solve your problem. Help them by enabling them to jump into your project by providing them the purpose of this Jupyter Notebook.
     - Explanation of the data sources and where one can retrieve them
         - Whenever possible, link to the corresponding data dictionary
-    - Custom functions and classes are imported from Python modules and are not created directly in the notebook.  As soon as you have a working function in one of your exploratory notebooks, copy it over to `src` so it is reusable.
-7. A one-page memo stored in `reports/memo.md` written exclusively for a non-technical stakeholder.
-    - This memo should describe:
-       - A summary of the business problem you are trying to solve
-       - Key takeaways from your solution
-       - A section on next steps if you had more time (i.e. one additional week)
-8. An "Executive Summary" Keynote/PowerPoint/Google Slide presentation (delivered as a PDF export) that explains what you have found for the SRP.
+    - We encourage you to import custom functions and classes from Python modules and not create them directly in the notebook.  As soon as you have a working function in one of your exploratory notebooks, copy it over to `src` so it is reusable.
+    - Much of the content in the report will be shared with the README.
+8. An "Executive Summary" Keynote/PowerPoint/Google Slide presentation (delivered as a PDF export) that explains what you have found for the SRP. The presentation that accompanies that deck should be 4-5 minutes, so use your space wisely.
     - Make sure to also add and commit this file as presentation.pdf of your non-technical presentation to your repository with a file name of `reports/presentation.pdf`.
     - Contain between 5-10 professional quality slides detailing:
        - A high-level overview of your methodology
@@ -121,6 +120,7 @@ To complete this project, you will need to turn in the following deliverables:
        - Any real-world recommendations you would like to make based on your findings (ask yourself--why should the executive team care about what you found? How can your findings help the company/stakeholder?)
        - Avoid technical jargon and explain results in a clear, actionable way for non-technical audiences.
     - All visualizations included in this presentation should also be exported as image files (e.g. with `plt.savefig`, not by taking a screenshot) and saved under `reports/figures/`
+9. Be sure to generate at least 3 high quality, well-labeled visualizations that support your conclusions. There should be a clear takeaway from each. These visualizations will reappear in the README, jupyter notebook report, and presentation deck.
 
 ## Citations
 
