@@ -1,4 +1,6 @@
-age_range,Opportunity Youth,Opportunity Youth%,No diploma,No diploma%,HS diploma or GED,HS diploma or GED%,"Some College, no degree","Some College, no degree%",Degree (Associate or higher),Degree (Associate or higher)%
-0.0,1941.0,100.0%,986.0,50.8%,812.0,41.83%,143.0,7.37%,0.0,0.0%
-1.0,4361.0,100.0%,1180.0,27.06%,2448.0,56.13%,601.0,13.78%,132.0,3.03%
-2.0,5228.0,100.0%,1429.0,27.33%,2171.0,41.53%,1098.0,21.0%,530.0,10.14%
+,16-18,%16-18,19-21,%19-21,22-24,%22-24,Totals,%Totals
+Opportunity Youth,1941.0,100.0,4361.0,100.0,5228.0,100.0,11530.0,300.0
+No diploma,986.0,50.8,1180.0,27.06,1429.0,27.33,3595.0,105.19
+HS diploma or GED,812.0,41.83,2448.0,56.13,2171.0,41.53,5431.0,139.49
+"Some College, no degree",143.0,7.37,601.0,13.78,1098.0,21.0,1842.0,42.15
+Degree (Associate or higher),0.0,0.0,132.0,3.03,530.0,10.14,662.0,13.17
