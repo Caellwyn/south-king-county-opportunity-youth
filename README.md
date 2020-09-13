@@ -37,6 +37,8 @@ Based on the [2016 report](https://roadmapproject.org/wp-content/uploads/2018/09
 	
 We created a table of the opportunity youths, and a table of all youths in these regions by querying the database for the ages, employment status, school enrollment status, and level of education attained of surveyed households.  Since only a portion of the population was polled, estimated counts were created by summing the [sample weights](https://www2.census.gov/programs-surveys/acs/tech_docs/pums/ACS2013_2017_PUMS_README.pdf?#page=11) for each sample.
 
+![total population of youth](reports/figures/total_popuation.jpg)
+
 ####Estimated OY Population results: 11530
 
 The [2016 Road Map Project](https://roadmapproject.org/wp-content/uploads/2018/09/Opportunity-Youth-2016-Data-Brief-v2.pdf#page=4) shows the opportunity for youth to be around 18,000, because they included more of the county in their analysis. Because of this our analysis focuses on the percentages of each group compared to total population, or total OY population, rather than raw counts.
