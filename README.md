@@ -8,8 +8,7 @@ The SRP would like an update on the estimated number of OY in South King County.
 
 ##Directory 
 
-[Source Code](‘source_code.py’) 
-
+[Data Query]('notebooks/exploratory/data_preparation.ipynb')
 [`Report Notebook`](‘report.py’)
 
 
