@@ -1,14 +1,28 @@
-South King County Opportunity Youth
+# South King County Opportunity Youth
 ===================
-This project offers an updated estimate of the number of Opportunity Youth in South King County using the 2017 5-year American Community Survey
+This project presents an updated estimate of the number of Opportunity Youth in South King County using the 2017 5-year American Community Survey, analyzes trends between the 2016 and 2017 reports, and makes policy recommendations.
 
 
-##Background
-The SRP would like an update on the estimated number of OY in South King County. However, that estimation comes from a report that is over three years old. The task was to update the SRP on the current status of OY in South King County using updated data.
+## Background
+The Seattle Regional Partnership would like an update on the estimated number of OY in South King County. However, that estimation comes from a report that is over three years old. The task was to update the SRP on the current status of OY in South King County using updated data.
 
-##Directory 
+## Directory 
 
-[Data Query](notebooks/exploratory/data_preparation.ipynb)
+### Data Aquisition and Preparation
+
+[Data Aquisition, Preparation, and Aggregation](notebooks/exploratory/)
+
+[Data Query and Cleaning](notebooks/exploratory/data_preparation.ipynb)
+
+[Data Aggregation and Exploration](notebooks/exploratory/data_aggreation.ipynb)
+
+[2017 Data Tables](notebooks/exploratory/tables)
+
+### Data Analysis
+
+
+
+
 
 [`Report Notebook`](‘report.py’)
 
@@ -19,26 +33,27 @@ The SRP would like an update on the estimated number of OY in South King County.
 
 ##Estimating the Population of South King County
 
-Based on the [2016 report](https://roadmapproject.org/wp-content/uploads/2018/09/Opportunity-Youth-2016-Data-Brief-v2.pdf) an opportunity youth is defined by being Age 16-24 who is not enrolled in school or having a job. From the report it was also noted that seven King County, Washington school districts: Auburn, Federal Way, Highline, Kent, Renton, (South) Seattle, and Tukwila make up for 92 % of the County’s High poverty schools. The information above was used to create a data frame from the 2017 pums data. 
+Based on the [2016 report](https://roadmapproject.org/wp-content/uploads/2018/09/Opportunity-Youth-2016-Data-Brief-v2.pdf) an opportunity youth is defined by being Age 16-24 who is not enrolled in school or having a job. From the report it was also noted that seven King County, Washington school districts: Auburn, Federal Way, Highline, Kent, Renton, (South) Seattle, and Tukwila make up for 92 % of the County’s High poverty schools. we used this information to create a table of the 2017 data for most of these regions. 
 	
-the [Sample Weighting](https://www2.census.gov/programs-surveys/acs/tech_docs/pums/ACS2013_2017_PUMS_README.pdf?#page=11)  was used to estimate the populations of each region.
-
-A list of the opportunity youth by puma(region) was created from the data frame and the total population by summing the weights for each sample.
-
+We created a table of the opportunity youths, and a table of all youths in these regions by querying the database for the ages, employment status, school enrollment status, and level of education attained of surveyed households.  Since only a portion of the population was polled, estimated counts were created by summing the [sample weights](https://www2.census.gov/programs-surveys/acs/tech_docs/pums/ACS2013_2017_PUMS_README.pdf?#page=11) for each sample.
 
 ####Estimated OY Population results: 11530
 
-The [2016 Road Map Project](https://roadmapproject.org/wp-content/uploads/2018/09/Opportunity-Youth-2016-Data-Brief-v2.pdf#page=4) shows the opportunity for youth to be around 18,000. This may be the result of using different sample weighting or regions. 
- 
-### Findings 
-
-#### The 2017 Data
+The [2016 Road Map Project](https://roadmapproject.org/wp-content/uploads/2018/09/Opportunity-Youth-2016-Data-Brief-v2.pdf#page=4) shows the opportunity for youth to be around 18,000, because they included more of the county in their analysis. Because of this our analysis focuses on the percentages of each group compared to total population, or total OY population, rather than raw counts.
 
 ##### Regions:
 
 Southeast Seattle and the Enumclaw region to the far southwest of the county have the lowest rates of OY youth in our study. The low OY population in SE seattle is not surprising as home values in Downtown and North Seattle neighborhoods skyrocket and employment opportunities grow in the city.  Seattle is the 3rd most gentrifying city in the U.S. <sup>6<sup> and many lower income people are moving south to find cheaper housing.  The Enumclaw region is very rural in nature, and borders Rainier National Forest.  However, it’s not clear how this affects employment and enrollment of youth.  The I-5 corridor hosts the greatest rates of OY in South King County.
 
 As a result of this, we recommend focusing interventions in Burien, Renton, Federal Way, and Kent regions.
+ 
+### Findings
+
+We found that overall rates of OY in this region fell among 19-21 year olds, and this trend was especially apparent among those with post-high school education.  We believe that while Seattle's economy has been creating new jobs, many or most of those jobs require education or training beyond high school.  It seems that opportunities for youth without post-highschool training are diminishing.  For this purpose, we recommend policies that will address barriers to access to post-secondary education, including tuition wavers, transportation, childcare, housing, and food assistance, and targeted outreach to OY in those regions, especially those mentioned above as having greater rates of OY.
+
+#### The 2017 Data
+
+![2017 Youth Population](notebooks/exploratory/tables/total_population.csv)
 
 #### Changes from 2016 to 2017
 
