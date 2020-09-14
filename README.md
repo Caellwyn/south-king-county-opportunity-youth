@@ -74,13 +74,13 @@ The trend toward jobs requiring more education leads us to recommend improving a
 
 <sup>2</sup> American Community Survey Office, 2019 “AMERICAN COMMUNITY SURVEY 2013-2017 ACS 5-YEAR PUMS FILES ReadMe”  Available at: https://bit.ly/35gFlRE.
 
-<sup>3</sup> King County Groundwater Protection Agency, 2020, “South King County Groundwater Management Area” kingcounty.gov
+<sup>3</sup> King County Groundwater Protection Agency, 2020, “South King County Groundwater Management Area” [kingcounty.gov](https://www.kingcounty.gov/services/environment/water-and-land/groundwater/management-areas/south-king-county-gwma.aspx)
 
-<sup>4</sup> Balk, Gene.  2019, “New milestone in King County: Immigrant population tops 500,000”, The Seattle Times.
+<sup>4</sup> Balk, Gene.  2019, “New milestone in King County: Immigrant population tops 500,000”, [The Seattle Times](https://www.seattletimes.com/seattle-news/data/new-milestone-in-king-county-immigrant-population-tops-500000/).
 
-<sup>5</sup> “Who Are Opportunity Youth?” 2020, The Aspen Institute Forum for Community Solutions. The Aspen Institute Forum for Community Solutions
+<sup>5</sup> “Who Are Opportunity Youth?” 2020, The Aspen Institute Forum for Community Solutions. [The Aspen Institute Forum for Community Solutions](https://aspencommunitysolutions.org/who-are-opportunity-youth/#:~:text=There%20are%20currently%204.6%20million,group%20in%20the%20United%20States.)
 
-<sup>6</sup> Balk, Gene. 2019, “Seattle is the third most gentrifying U.S. city — but that might not be as bad as you think, study finds”, The Seattle Times.
+<sup>6</sup> Balk, Gene. 2019, “Seattle is the third most gentrifying U.S. city — but that might not be as bad as you think, study finds”, [The Seattle Times](https://www.seattletimes.com/seattle-news/data/seattle-ranks-near-top-for-gentrification-but-that-might-not-be-as-bad-as-you-think-study-finds/#:~:text=worsening%20air%20quality-,Seattle%20is%20the%20third%20most%20gentrifying%20U.S.%20city%20%E2%80%94%20but%20that,as%20you%20think%2C%20study%20finds&text=But%20there's%20a%20detrimental%20side,pushed%20out%20of%20the%20neighborhood.).
 
 <sup>7</sup> Anderson, T., Braga, B., Derrick-Mills, T., Dodkowitz, A., Peters, E., Runes, C., and Winkler, M. 2019. “New Insights into the Back on Track Model’s Effects on Opportunity Youth Outcomes”. Urban Institute. Available at: https://bit.ly/2BuCLr1.
 
