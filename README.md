@@ -28,10 +28,10 @@ This project presents an updated estimate of the number of Opportunity Youth(OY)
 
 [Final Report Notebook](notebooks/report/FinalNotebook.ipynb)
 
-[Executive Summary](reports/Opportunity Youth in South King County, Group 3.pdf)
+[Executive Summary](reports/Opportunity%20Youth%20in%20South%20King%20County,%20Group%20%3.pdf)
 
 ## Background
-The Seattle Regional Partnership(SRP) would like an update on the estimated number of OY in South King County. However, that estimation comes from a report that is over three years old. The task was to update the SRP on the current status of OY in South King County using updated data.
+The Seattle Regional Partnership(SRP) would like an update on the estimated number of OY in South King County. However, that estimation comes from a report that is over three years old. The task was to update the SRP on the current st%atus of OY in South King County using updated data.
 
 ![Map of South King County](notebooks/report/Figures/opportunity_youth_map.png)
 
