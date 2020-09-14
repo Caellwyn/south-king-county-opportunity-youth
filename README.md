@@ -2,7 +2,7 @@
 
 ---
 
-This project presents an updated estimate of the number of Opportunity Youth[[(OY)]] in South King County using the 2017 5-year American Community Survey, analyzes trends between the 2016 and 2017 reports, and makes policy recommendations.
+This project presents an updated estimate of the number of Opportunity Youth(OY) in South King County using the 2017 5-year American Community Survey, analyzes trends between the 2016 and 2017 reports, and makes policy recommendations.
 
 ## Directory 
 
@@ -31,11 +31,11 @@ This project presents an updated estimate of the number of Opportunity Youth[[(O
 [Executive Summary](reports/Opportunity Youth in South King County, Group 3.pdf)
 
 ## Background
-The Seattle Regional Partnership[[(SRP)]] would like an update on the estimated number of OY in South King County. However, that estimation comes from a report that is over three years old. The task was to update the SRP on the current status of OY in South King County using updated data.
+The Seattle Regional Partnership(SRP) would like an update on the estimated number of OY in South King County. However, that estimation comes from a report that is over three years old. The task was to update the SRP on the current status of OY in South King County using updated data.
 
 ![Map of South King County](notebooks/report/Figures/opportunity_youth_map.png)
 
-In the [2016 report](https://roadmapproject.org/wp-content/uploads/2018/09/Opportunity-Youth-2016-Data-Brief-v2.pdf) an opportunity youth is defined by being [[between the ages of (or small a for age?)]]Age 16-24 who is not enrolled in school or having a job. From the report it was also noted that seven King County, Washington school districts: Auburn, Federal Way, Highline, Kent, Renton, (South) Seattle, and Tukwila make up for 92 % of the County’s High poverty schools.[[capital W]] we used this information to create a table of the 2017 data for most of these regions. 
+In the [2016 report](https://roadmapproject.org/wp-content/uploads/2018/09/Opportunity-Youth-2016-Data-Brief-v2.pdf) an opportunity youth is defined by being ages 16-24 who is not enrolled in school or having a job. From the report it was also noted that seven King County, Washington school districts: Auburn, Federal Way, Highline, Kent, Renton, (South) Seattle, and Tukwila make up for 92 % of the County’s High poverty schools. We used this information to create a table of the 2017 data for most of these regions. 
 
 
 #### Regions:
@@ -50,7 +50,7 @@ Southeast Seattle and the Enumclaw region to the far southwest of the county hav
 
 ![total population of youth](reports/figures/total_popuation.jpg)
 
-*The [2016 Road Map Project](https://roadmapproject.org/wp-content/uploads/2018/09/Opportunity-Youth-2016-Data-Brief-v2.pdf#page=4) shows the [[capital O and Y, taking out the 'for' in between. I think it's capital through out because it's a category?]] opportunity for youth to be around 18,000, because they included more of the county in their analysis. Because of this our analysis focuses on the percentages of each group compared to total population, or total OY population, rather than raw counts.*
+*The [2016 Road Map Project](https://roadmapproject.org/wp-content/uploads/2018/09/Opportunity-Youth-2016-Data-Brief-v2.pdf#page=4) shows the opportunity youth to be around 18,000, because they included more of the county in their analysis. Because of this our analysis focuses on the percentages of each group compared to total population, or total OY population, rather than raw counts.*
 
 Overall percentages of youth classified as OY fell between 2016 and 2017 among youth past high school age.  We believe this represents improving job prospects in King County due to a rapidly growing tech industry.  Even if new jobs are not in the industry itself, it attracts highly paid workers and the benefits trickle through the economy as a whole.  It also may be due to improved educational access for these age groups, but more research would be needed to confirm that.
 
@@ -60,7 +60,7 @@ By studying the rates of OY by educational attainment, we see more unemployed an
 
 ![OY by education level](reports/figures/OY_ed_trend_20162017.png)
 
-We see above that more youth are out of work and school with just a high school diploma or GED in 2017 than in 2016, however a lower percentage of youth with at least some college are out of work and school.  This supports our conclusion that post-secondary education has been the key to reducing the rates of [[capitalized?]] opportunity youth in these regions. 
+We see above that more youth are out of work and school with just a high school diploma or GED in 2017 than in 2016, however a lower percentage of youth with at least some college are out of work and school.  This supports our conclusion that post-secondary education has been the key to reducing the rates of opportunity youth in these regions. 
 
 ### Conclusion
 
