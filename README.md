@@ -1,8 +1,12 @@
 # South King County Opportunity Youth
-===================
+
+---
+
 This project presents an updated estimate of the number of Opportunity Youth in South King County using the 2017 5-year American Community Survey, analyzes trends between the 2016 and 2017 reports, and makes policy recommendations.
 
 ## Directory 
+
+---
 
 ### Data Aquisition and Preparation
 
@@ -36,12 +40,11 @@ In the [2016 report](https://roadmapproject.org/wp-content/uploads/2018/09/Oppor
 
 #### Regions:
 
-Southeast Seattle and the Enumclaw region to the far southwest of the county have the lowest rates of OY youth in our study. The low OY population in SE seattle is not surprising as home values in Downtown and North Seattle neighborhoods skyrocket and employment opportunities grow in the city.  Seattle is the 3rd most gentrifying city in the U.S. <sup>6</sup> and many lower income people are moving south to find cheaper housing.  The Enumclaw region is very rural in nature, and borders Rainier National Forest.  However, it’s not clear how this affects employment and enrollment of youth.  The I-5 corridor hosts the greatest rates of OY in South King County.
-
+Southeast Seattle and the Enumclaw region to the far southwest of the county have the lowest rates of OY youth in our study. The low OY population in SE seattle is not surprising as home values in Downtown and North Seattle neighborhoods skyrocket and employment opportunities grow in the city.  Seattle is the 3rd most gentrifying city in the U.S. <sup>6</sup> and many lower income people are moving south to find cheaper housing.  The Enumclaw region is very rural in nature, and borders Rainier National Forest.  However, it’s not clear how this affects employment and enrollment of youth.  The I-5 corridor hosts the greatest rates of OY in South King County, and the greatest opportunities for impactful interventions.
 
 ### Findings
 
-We found that while the percentages of youth classificed as opportunity youth fell in the 19-24 age groups, this has been primarily driven by those youth with some college experience.  We recommend improving access to post-seconday education for youths. The interventions would especially impactful in Burien, Renton, Federal Way, and Kent regions, due to their higher rates of OY 
+---
 
 #### Changes from 2016 to 2017
 
@@ -59,9 +62,11 @@ By studying the rates of OY by educational attainment, we see more unemployed an
 
 We see above that more youth are out of work and school with just a high school diploma or GED in 2017 than in 2016, however a lower percentage of youth with at least some college are out of work and school.  This supports our conclusion that post-secondary education has been the key to reducing the rates of opportunity youth in these regions. 
 
-### Conclusions
+### Conclusion
 
-The trend toward jobs requiring more education leads us to recommend improving access to community colleges and trade schools.  This should come in the form of tuition waivers, childcare subsidies, transportation allowances, living and food stipends, and targeted outreach.  With these interventions we can improve the lives of these youth and their contributions to our society and economy.
+Many youth in King County face significant obstacles in becoming engages with work and/or school.  These include poverty, parenthood, physical and mental health, criminal convictions, homelessness, and past academic struggles <sup>1</sup>.  These barriers represent policy opportunities to clear a path forward toward further education for these youth.
+
+The trend toward jobs requiring more education leads us to recommend improving access to community colleges and trade schools.  This should come in the form of tuition waivers, childcare subsidies, transportation allowances, living and food stipends, health care, access to respectful remedial education, and targeted outreach.  With these interventions we can improve the lives of these youth and their contributions to our society and economy.
 
 ## References
 
